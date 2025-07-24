@@ -19,7 +19,7 @@ data:
     cp /var/authd.pass /var/ossec/etc/
 
     # Register agent with manager
-    /var/ossec/bin/agent-auth -m  <Wazuh Manager IP>
+    /var/ossec/bin/agent-auth -m  <WAZUH-MANAGER-IP>
     # Reload systemd and start services
     /var/ossec/bin/wazuh-control start
     /var/ossec/bin/wazuh-control restart
