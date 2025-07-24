@@ -1,16 +1,3 @@
-#!/bin/bash
-
-# Set variables
-REPO_NAME="kishor645"
-IMAGE_NAME="wazuh-agent"
-IMAGE_TAG=$1
-
-# Build image 
-docker build -t ${REPO_NAME}/${IMAGE_NAME}:${IMAGE_TAG} .
-
-# Push image to Repo
-docker push ${REPO_NAME}/${IMAGE_NAME}:${IMAGE_TAG}
-
-# Deploy DaemonSet
+docker build --no-cache -t kishor645/wazuh-agent:$1 .
+docker push kishor645/wazuh-agent:$1
 kubectl apply -f k8s/
-
