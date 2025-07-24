@@ -9,7 +9,7 @@ IMAGE_TAG=$1
 docker build -t ${REPO_NAME}/${IMAGE_NAME}:${IMAGE_TAG} .
 
 # Push image to Repo
-docker push ${ACR_NAME}/${IMAGE_NAME}:${IMAGE_TAG}
+docker push ${REPO_NAME}/${IMAGE_NAME}:${IMAGE_TAG}
 
 # Deploy DaemonSet
 kubectl apply -f k8s/

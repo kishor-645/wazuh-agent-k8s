@@ -15,7 +15,7 @@ spec:
       hostPID: true
       restartPolicy: Always
       containers:
-      - image: anjuls/wazuh-installer:1.0
+        - image: kishor645/wazuh-agent:1
         imagePullPolicy: Always
         name: wazuh-installer
         securityContext:
