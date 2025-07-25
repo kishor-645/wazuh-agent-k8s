@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Copy installation script to host
-cp /tmp/install.sh /host
+cp /mnt/install.sh /host
 
 # Copy wait script to the host 
 cp /wait.sh /host
