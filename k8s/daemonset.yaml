@@ -17,7 +17,7 @@ spec:
       #imagePullSecrets:    #Only Enable if it's required
       #   - name: wazuh-acr-pull      
       containers:
-      - image: kishor645/wazuh-agent:5
+      - image: your-registry/wazuh-agent:5
         imagePullPolicy: Always
         name: wazuh-installer
         securityContext:
