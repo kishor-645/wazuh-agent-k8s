@@ -14,8 +14,8 @@ spec:
     spec:
       hostPID: true
       restartPolicy: Always
-      imagePullSecrets:
-         - name: wazuh-acr-pull      
+      #imagePullSecrets:    #Only Enable if it's required
+      #   - name: wazuh-acr-pull      
       containers:
       - image: kishor645/wazuh-agent:5
         imagePullPolicy: Always
